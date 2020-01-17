@@ -11,11 +11,7 @@ public class KafkaProducerApplication {
 
 	public static void main(String[] args) {
 		ConfigurableApplicationContext context = SpringApplication.run(KafkaProducerApplication.class, args);
-		KafkaTemplate<String,String> producer = context.getBean(KafkaTemplate.class);
-		producer.send("NumberTopic","hello World");
-		producer.send("NumberTopic","What's Up");
-		producer.send("NumberTopic","Never Mind");
-		producer.send("NumberTopic","Gotta do SomeThing");
+
 	}
 
 
